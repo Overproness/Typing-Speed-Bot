@@ -7,7 +7,7 @@ const ourFunction = async () => {
 
   await driver.get("https://monkeytype.com/");
 
-  let cookiesNotification = await driver.findElement(By.id("cookiePopup"));
+  let cookiesNotification = await driver.findElement(By.id("popups"));
   await cookiesNotification
     .findElement(By.className("main"))
     .findElement(By.className("buttons"))
